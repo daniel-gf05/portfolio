@@ -80,13 +80,15 @@
     },
     {
         "_id": {
-            "$oid": "679a046c82f3a78542fbbd12"
+            "$oid": "679a052e82f3a78542fbbd20"
         },
-        "title": "Python Encrypter",
-        "url": "https://github.com/daniel-gf05/python-encrypter",
-        "description": "Una herramienta de cifrado y descifrado de texto en Python, enfocada en la seguridad y el manejo de algoritmos criptográficos.",
+        "title": "NetScan",
+        "url": "https://github.com/daniel-gf05/netscan",
+        "description": "Sistema perimetral de auditoría de radiofrecuencia y diagnóstico de redes inalámbricas, con procesamiento descentralizado en el Edge (ESP32) y persistencia local cifrada con AES-256-CBC.",
         "tags": [
-            "Python",
+            "TypeScript",
+            "React",
+            "ESP32",
             "Cryptography",
             "Security"
         ]
