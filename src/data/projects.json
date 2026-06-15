@@ -92,5 +92,19 @@
             "Cryptography",
             "Security"
         ]
+    },
+    {
+        "_id": {
+            "$oid": "679a046c82f3a78542fbbd13"
+        },
+        "title": "Python Nmap Scanner",
+        "url": "https://github.com/daniel-gf05/python-nmap",
+        "description": "A network discovery tool built in Python that leverages the Nmap library to perform automated port scanning and service detection.",
+        "tags": [
+            "Python",
+            "Networking",
+            "Security",
+            "Nmap"
+        ]
     }
 ]

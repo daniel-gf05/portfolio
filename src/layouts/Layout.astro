@@ -1,20 +1,30 @@
 ---
-import Menu from "../components/Menu.astro"
-import "../styles/global.css"
+import Menu from "../components/Menu.astro";
+import "../styles/global.css";
 
-const {title} = Astro.props
+const { title } = Astro.props;
 ---
+
 <!doctype html>
 <html class="h-full" lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="text-slate-300 bg-[url(/background.jpg)] bg-neutral-primary pt-20 md:pt-24 min-h-full">
-		<Menu />
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body
+        class="text-slate-300 bg-slate-950 pt-20 md:pt-24 min-h-full selection:bg-purple-500/30"
+    >
+        <div class="fixed inset-0 -z-10 h-full w-full bg-slate-950">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_farthest-side_at_50%_-20%,#3b0764,transparent)]"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_farthest-side_at_50%_120%,#1e3a8a,transparent)] opacity-50"></div>
+        </div>
+
+        <Menu />
+        <main class="relative">
+            <slot />
+        </main>
+    </body>
 </html>
